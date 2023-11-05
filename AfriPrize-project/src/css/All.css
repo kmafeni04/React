@@ -1,0 +1,1815 @@
+:root {
+  --blue: rgb(1, 0, 56);
+  --gold: rgb(204, 153, 51);
+  --gold-light: rgb(204, 153, 51, 0.5);
+  --grey: rgb(202, 202, 202);
+  --grey-light: rgb(202, 202, 202, 0.3);
+  --grey-text: rgb(136, 136, 136);
+  --grey-dark: rgb(95, 95, 95);
+  --transition-time: 0.3s;
+  --page-top-padding: 6vw;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.webPage {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Login and Register Pages */
+
+.firstHalf {
+  width: 50%;
+  height: 100vh;
+  color: white;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logoBackground {
+  width: 100vw;
+}
+
+.logo {
+  position: absolute;
+  width: 40vw;
+  z-index: 1;
+}
+
+.secondHalf {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondHalfTop {
+  width: 90%;
+  margin-bottom: 3vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondHalfTopTable {
+  width: 50%;
+  text-align: center;
+  border-spacing: 0;
+  font-size: 1.3vw;
+}
+
+.secondHalfTopTableTop {
+  height: 4vw;
+}
+
+.secondHalfTopTableTopOne {
+  width: 50%;
+}
+
+#activeHeader {
+  color: var(--gold);
+}
+
+.secondHalfTopTableTopTwo {
+  width: 50%;
+}
+
+.TopBar {
+  width: 100%;
+  background-color: var(--grey);
+  border-radius: 1vw;
+  display: flex;
+  justify-content: left;
+}
+
+.ActiveBar {
+  background-color: var(--gold);
+  width: 50%;
+  height: 0.5vw;
+  border-radius: 1vw;
+}
+
+.secondHalfTopTableBottomTwo {
+  background-color: var(--grey);
+}
+
+.secondHalfMain {
+  width: 60%;
+}
+
+.secondHalfMainHeader {
+  margin-bottom: 1.5vw;
+  font-size: 1.3vw;
+}
+
+.secondHalfMainSubHeader {
+  width: 70%;
+  margin-bottom: 1.5vw;
+  font-size: 1.1vw;
+}
+
+.secondHalfMainInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5vw;
+}
+
+.secondHalfMainInput input {
+  border-radius: 0.7vw;
+  border: 0.1vw solid var(--grey);
+  width: 100%;
+  margin: 1vw 0;
+  padding-top: 1.4vw;
+  padding-bottom: 1.1vw;
+  padding-left: 1vw;
+  font-size: 0.9vw;
+}
+
+.secondHalfMainInput input::placeholder {
+  color: var(--grey);
+  font-size: 0.9vw;
+}
+
+.secondHalfMainFpLgn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1vw;
+}
+
+.secondHalfMainFpLgn a {
+  color: var(--gold);
+  font-size: 1.5vw;
+}
+
+.secondHalfMainFpLgn button {
+  color: white;
+  background-color: var(--blue);
+  border-radius: 0.8vw;
+  font-weight: bold;
+  padding: 1vw 4vw;
+  font-size: 1vw;
+}
+
+.rmbrMe {
+  margin-top: 1.5vh;
+  display: flex;
+  justify-content: right;
+  font-size: 1vw;
+}
+
+/*Register Page Specific */
+
+.secondHalfMainNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 3vh;
+}
+
+.secondHalfMainNavRadio {
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+}
+
+.secondHalfMainInput p {
+  color: var(--grey-text);
+  margin-left: 1vw;
+  font-size: 12px;
+  margin-bottom: 3vh;
+}
+
+.secondHalfMainNext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#onlyNext {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.secondHalfMainNext button {
+  color: white;
+  background-color: var(--blue);
+  border-radius: 0.8vw;
+  font-weight: bold;
+  padding: 1vw 4vw;
+  font-size: 1vw;
+}
+
+.secondHalfMainInput select {
+  background: white;
+  border-radius: 0.7vw;
+  border: 0.1vw solid var(--grey);
+  width: 101.5%;
+  margin: 1vw 0;
+  padding-top: 1.4vw;
+  padding-bottom: 1.1vw;
+  padding-left: 1vw;
+  font-size: 12px;
+}
+
+.secondHalfMainInput select::placeholder {
+  color: var(--grey-text);
+}
+
+.secondHalfMainVerify {
+  display: flex;
+  justify-content: right;
+}
+
+.secondHalfMainVerify button {
+  color: white;
+  background-color: var(--blue);
+  border-radius: 0.8vw;
+  font-weight: bold;
+  padding: 1vw 4vw;
+  font-size: 1vw;
+  margin-bottom: 2vw;
+}
+
+.secondHalfMainResend {
+  display: flex;
+}
+
+.secondHalfMainResend a {
+  color: var(--gold);
+}
+
+.secondHalfMainCongratulations {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secondHalfMainCongratulations h1 {
+  color: var(--gold);
+  font-size: 3vw;
+}
+
+.secondHalfMainCongratulations p {
+  font-size: 1.5vw;
+}
+
+.secondHalfMainCongratulations button {
+  color: white;
+  background-color: var(--blue);
+  border-radius: 1vh;
+  font-weight: bold;
+  padding: 2vh 3vw;
+  margin-bottom: 2vh;
+}
+
+/* End of Login and Register Pages */
+
+/* Forgot Password Page */
+
+.FgPwd h1 {
+  margin-bottom: 2vh;
+}
+
+.FgPwd p {
+  margin: 0;
+  margin-bottom: 1vh;
+  font-size: 15px;
+  color: black;
+}
+
+/* End of Forgot Password Page */
+
+/* Home Page */
+
+/* Navbar */
+
+.MainNavbar {
+  width: 100%;
+  height: 6vw;
+  z-index: 1;
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+}
+
+.MainNavbar .NavLogoBackground {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.InnerMargin {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  margin: 0 3vw;
+  width: 100%;
+}
+
+.NavLogo {
+  z-index: 1;
+  width: 16vw;
+}
+
+.NavSpace {
+  width: 10%;
+}
+
+.MainNavbar .SearchBar {
+  background-color: var(--grey-light);
+  border-radius: 5vw;
+  height: 2.5vw;
+  width: 17vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 1%;
+}
+
+.MainNavbar .SearchBar input {
+  height: 80%;
+  width: 75%;
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 1vw;
+  color: white;
+  font-size: 1.2vw;
+}
+
+.MainNavbar .SearchBar .MagnifyingGlass {
+  width: 10%;
+  margin-right: 6%;
+  cursor: pointer;
+}
+
+.NavLinks {
+  width: 40%;
+}
+
+.NavLinks ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.NavLinks ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vw;
+  height: 3vw;
+  width: 7vw;
+  transition: var(--transition-time);
+}
+
+.NavLinks ul li:hover {
+  background-color: var(--grey-light);
+  transition: var(--transition-time);
+}
+
+#notiCart {
+  width: 3vw;
+  cursor: pointer;
+}
+
+#activeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gold);
+  border-radius: 5vw;
+  height: 3vw;
+  width: 7vw;
+}
+
+#notiCartActive {
+  width: 3vw;
+  cursor: pointer;
+  background: var(--gold);
+}
+
+.NavNotifications {
+  height: 1.3vw;
+}
+
+.NavCart {
+  height: 1.3vw;
+}
+
+/*End of Navbar */
+
+/* Home Main */
+
+.HomeMainPage {
+  padding-top: var(--page-top-padding);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/*Section One */
+
+.HomeMainPage .SectionOne {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 2vw 0;
+  position: relative;
+}
+
+.SectionOneFirstHalf {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vw 1.6vw;
+  width: 65%;
+}
+
+.Mclaren {
+  z-index: 0;
+}
+
+.SectionOneFirstHalf .LowerElements {
+  position: absolute;
+  color: white;
+  top: 17vw;
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.SectionOneFirstHalf .LowerElements button {
+  width: 12vw;
+  height: 4vw;
+  background: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border: none;
+  border-radius: 1vw;
+}
+
+.SectionOneFirstHalf .LowerElements .LeftHand {
+  width: 30%;
+}
+
+.Sneakers {
+  margin-bottom: 0.2vw;
+  width: 45%;
+}
+
+.SectionOneFirstHalf .LowerElements .LeftHand p {
+  font-weight: bold;
+  font-size: 1.2vw;
+  margin-bottom: 2vw;
+}
+
+.SectionOneFirstHalf .LowerElements .LeftHand h2 {
+  font-size: 2vw;
+}
+
+.SectionOneSecondHalf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.SectionOneSecondHalf h1 {
+  color: var(--grey-text);
+  font-size: 2.5vw;
+}
+
+/* Selling fast cards */
+
+.SellingFastCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.SellingFastCard {
+  margin-top: 4vw;
+  padding: 2vw 1.5vw;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2vw;
+  box-shadow: 0 0.4vh 0.7vh 0 rgb(0, 0, 0, 0.3);
+  height: 13vw;
+}
+
+.SellingFastCardFirstHalf {
+  display: flex;
+  margin: 0.7vw;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+}
+
+.SellingFastCardFirstHalf h1 {
+  color: black;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+.SellingFastCardFirstHalf p {
+  margin-bottom: 2vw;
+  font-size: 1.1vw;
+  width: 100%;
+}
+
+.ProgressBar {
+  width: 100%;
+  background-color: var(--gold-light);
+  height: 10%;
+  border: none;
+  border-radius: 1vw;
+  margin-bottom: 2vw;
+}
+
+.ProgressBarContainer p {
+  margin-bottom: 1vh;
+}
+
+.ProgressBarContainer h5 {
+  font-size: 1vw;
+}
+
+.ProgressBarInner {
+  width: 40%;
+  background-color: var(--gold);
+  height: 100%;
+  border: none;
+  border-radius: 1vw;
+}
+
+.SellingFastCardSecondHalf {
+  height: 100%;
+}
+
+.SellingFastCardSecondHalf .Ferrari {
+  height: 100%;
+}
+
+/*End of Section One */
+
+/*Section Two */
+
+.HomeMainPage .SectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 4vw 0;
+}
+
+.HomeMainPage .SectionTwo h1 {
+  color: var(--grey-text);
+  margin-left: 5vw;
+  font-size: 2vw;
+  margin-bottom: 4vw;
+  width: 100%;
+}
+
+.HomeMainPage .SectionTwo .Recommended {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2vw;
+  margin-bottom: 1vw;
+}
+
+/* Recommended Cards */
+
+.RecommendedCard {
+  width: 23%;
+  border-radius: 1vw;
+  box-shadow: 0 0.7vw 0.7vw 0 rgb(0, 0, 0, 0.3);
+}
+
+.RecommendedCardFirstHalf {
+  position: relative;
+}
+
+.RecommendedCardImg {
+  width: 100%;
+}
+
+.RecommendedCard .AboveImage {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 0.9vw;
+}
+
+.RecommendedCard .Top {
+  background: white;
+  border-radius: 0.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1vw;
+  width: 3.5vw;
+  height: 1.5vw;
+  margin-left: 0.8vw;
+  padding-right: 0.8vw;
+  margin-bottom: 5vw;
+}
+
+.RecommendedCard .Top .Star {
+  width: 1.3vw;
+  margin: 0 0.5vw;
+}
+
+.RecommendedCard .Top p {
+  font-size: 1vw;
+}
+
+.RecommendedCard .Bottom {
+  width: 100%;
+}
+
+.RecommendedCard .Slippers {
+  position: relative;
+  width: 23%;
+  left: 73%;
+  bottom: 10%;
+}
+
+.RecommendedCardSecondHalf {
+  width: 100%;
+}
+
+.RecommendedCardSecondHalf .Inner {
+  margin: 0 0.8vw;
+}
+
+.RecommendedCardSecondHalf .Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+}
+
+.RecommendedCardSecondHalf .Header h3 {
+  font-size: 1.5vw;
+}
+
+.RecommendedCardSecondHalf .Header span {
+  display: flex;
+  font-size: 0.6vw;
+  color: var(--grey-text);
+}
+
+.RecommendedCardSecondHalf .Header span p {
+  color: black;
+  font-weight: bold;
+}
+
+#recommendedBar {
+  width: 70%;
+  height: 5vw;
+  font-size: 1.1vw;
+}
+
+.RecommendedCardSecondHalf .Bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.RecommendedCardSecondHalf .Bottom span {
+  display: flex;
+  font-size: 1vw;
+  color: var(--grey-text);
+  margin-bottom: 3vw;
+}
+
+.RecommendedCardSecondHalf .Bottom span p {
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.RecommendedCardSecondHalf .Bottom button {
+  align-self: center;
+  font-size: 1.1vw;
+  font-weight: bold;
+  color: white;
+  background: var(--blue);
+  border-radius: 1vw;
+  height: 3.5vw;
+  width: 15vw;
+  margin-bottom: 4vw;
+}
+
+/* End of Cards */
+
+.HomeMainPage .SectionTwo h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vw;
+  width: 5vw;
+  font-size: 1.3vw;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.HomeMainPage .SectionTwo h4::after {
+  content: "";
+  float: left;
+  background: var(--blue);
+  width: 100%;
+  height: 0.5vw;
+  border-radius: 1vw;
+  margin-bottom: 5vw;
+  cursor: help;
+}
+
+/*End of Section Two */
+
+.HomeMainPage .SectionThree h1 {
+  color: var(--grey-text);
+  margin-left: 3vw;
+  font-size: 2vw;
+  margin-bottom: 5vw;
+  width: 100%;
+}
+
+.Footer {
+  background: var(--blue);
+  width: 100%;
+  height: 20vw;
+  color: white;
+}
+
+.Footer .Content {
+  padding-top: 4vw;
+  margin-left: 3vw;
+}
+
+.Footer .Content table {
+  width: 50%;
+}
+
+.Footer .Content li {
+  margin-bottom: 0.1vw;
+  font-size: 1.1vw;
+}
+
+.Footer .Content h1 {
+  margin-bottom: 1vw;
+}
+
+/* End of Home Page */
+
+/* Product Page */
+
+.ProductMainPage {
+  padding-top: var(--page-top-padding);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.ProductMainPage .SectionOne {
+  width: 100%;
+  margin: 2vw 0;
+  margin-left: 2vw;
+  display: flex;
+}
+
+.ProductMainPage .SectionOne .FirstHalf {
+  margin-left: 3vw;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.ProductMainPage .SectionOne .FirstHalf .Top {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.2vw;
+}
+
+.ProductMainPage .SectionOne .FirstHalf .Top img {
+  width: 80%;
+}
+
+.ProductMainPage .SectionOne .FirstHalf .Top .Desc {
+  background-color: white;
+  border-radius: 0 0.7vw 0.7vw 0;
+  color: var(--grey-text);
+  position: absolute;
+  bottom: 5vw;
+  padding: 1vw 1vw;
+  font-size: 1.4vw;
+}
+
+.ProductMainPage .SectionOne .FirstHalf .Bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.ProductMainPage .SectionOne .FirstHalf .Bottom img {
+  width: 20%;
+}
+
+.ProductMainPage .SectionOne .SecondHalf {
+  width: 40%;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.2vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 0.7vw 0 rgb(0, 0, 0, 0.3);
+  padding: 1.4vw 5vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Top {
+  padding-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 27%;
+  margin-bottom: 3vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Top p {
+  font-weight: bold;
+  font-size: 0.8vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Top img {
+  height: 1vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Top span {
+  font-size: 0.7vw;
+  display: flex;
+  color: var(--grey-text);
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Top span p {
+  margin-left: 0.3vw;
+  font-weight: normal;
+  color: black;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Header {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Header h1 {
+  margin-bottom: 3vw;
+  font-size: 2vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Header h2 {
+  align-self: end;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Content {
+  margin-bottom: 5vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Content h2 {
+  margin-bottom: 1vw;
+  font-size: 1.4vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Content p {
+  color: var(--grey-text);
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Counter {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  box-shadow: 0 0 0.7vw 0 rgb(0, 0, 0, 0.3);
+  border-radius: 1vw;
+  height: 4vw;
+  margin-bottom: 6vw;
+  font-size: 1.2vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .Counter button {
+  background: var(--grey);
+  border-radius: 1vw;
+  border: none;
+  height: 2vw;
+  width: 6vw;
+  font-size: 1vw;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .AddBtn {
+  align-self: end;
+}
+
+.ProductMainPage .SectionOne .SecondHalf .ProductDesc .AddBtn button {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3vw;
+  background: var(--blue);
+  border-radius: 1vw;
+  height: 4vw;
+  width: 12vw;
+  margin-bottom: 2vw;
+}
+
+.ProductMainPage .SectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+
+.ProductMainPage .SectionTwo h1 {
+  color: var(--grey-text);
+  margin-left: 4vw;
+  margin-bottom: 4vw;
+  width: 100%;
+  font-size: 2.2vw;
+}
+
+.ProductMainPage .SectionTwo .Recommended {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2vw;
+  margin-bottom: 1vw;
+}
+
+.ProductListMainPage .SectionTwo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vw;
+}
+
+.ProductListMainPage .SectionTwo h1 {
+  color: var(--grey-text);
+  margin-left: 2vw;
+  margin-bottom: 3vw;
+  font-size: 2vw;
+}
+
+.ProductListMainPage .SectionTwo .Recommended {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2vw;
+  margin-bottom: 5vw;
+}
+
+/* Draws Page */
+
+.RaffleDrawPage {
+  padding-top: var(--page-top-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RaffleDrawImg {
+  width: 40vw;
+}
+
+.RaffleMclaren {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vw 1.6vw;
+  width: 80%;
+}
+
+.Mclaren {
+  z-index: 0;
+  width: 100%;
+}
+
+.RaffleMclaren .LowerElements {
+  position: absolute;
+  color: white;
+  top: 23vw;
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.RaffleMclaren .LowerElements button {
+  width: 12vw;
+  height: 4vw;
+  background: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border: none;
+  border-radius: 1vw;
+}
+
+.RaffleMclaren .LowerElements .LeftHand {
+  width: 30%;
+}
+
+.Sneakers {
+  margin-bottom: 0.2vw;
+  width: 45%;
+}
+
+.RaffleMclaren .LowerElements .LeftHand p {
+  font-weight: bold;
+  font-size: 1.2vw;
+  margin-bottom: 2vw;
+}
+
+.RaffleMclaren .LowerElements .LeftHand h2 {
+  font-size: 2vw;
+}
+
+.RaffleDrawPage .Running {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RaffleDrawPage .Running h1 {
+  align-self: self-start;
+  color: var(--grey-text);
+  margin-bottom: 3vw;
+  font-size: 3vw;
+}
+
+.RaffleDrawPage .Running .List {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.RaffleDrawPage .Running .List h3 {
+  font-size: 1.7vw;
+}
+
+.RaffleDrawPage .Running table {
+  padding-left: 13vw;
+  border: solid 0.1vw black;
+  border-radius: 1vw;
+  height: 14vw;
+  width: 75vw;
+  line-height: 2vw;
+}
+
+.RaffleDrawPage .Running table p {
+  font-size: 1.5vw;
+}
+
+.RaffleDrawPage .Running table h3 {
+  font-size: 1.7vw;
+}
+
+.RaffleDrawPage .Running table h4 {
+  font-size: 1.7vw;
+  color: var(--grey-text);
+}
+
+.RaffleDrawPage .Running table h5 {
+  font-size: 1.7vw;
+  color: var(--grey-dark);
+}
+
+/*Help Page */
+
+.HelpPage {
+  padding-top: var(--page-top-padding);
+  display: flex;
+  flex-direction: column;
+}
+
+.HelpPage .HelpBanner {
+  position: relative;
+  margin-top: 3vw;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: var(--blue);
+  width: 80%;
+  height: 20vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw 0.7vw var(--grey);
+  margin-bottom: 3vw;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.HelpPage .HelpBanner .LogoBackground {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.HelpPage .HelpBanner .Logo {
+  width: 50%;
+}
+
+.HelpPage .HelpBanner .Search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HelpPage .HelpBanner .Search h1 {
+  font-size: 2.3vw;
+  margin-bottom: 3vw;
+}
+
+.HelpPage .HelpBanner .Search .SearchBar {
+  background-color: var(--grey-light);
+  border-radius: 5vw;
+  height: 2.5vw;
+  width: 17vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 1%;
+  margin-bottom: 0.7vw;
+}
+
+.HelpPage .HelpBanner .Search .SearchBar input {
+  height: 80%;
+  width: 75%;
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 1vw;
+  color: white;
+  font-size: 1.2vw;
+}
+
+.HelpPage .HelpBanner .Search .SearchBar .MagnifyingGlass {
+  width: 10%;
+  margin-right: 6%;
+  cursor: pointer;
+}
+
+.HelpPage .FAQ {
+  margin-bottom: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.HelpPage .FAQ h1 {
+  margin-left: 10vw;
+  color: var(--grey-text);
+  margin-bottom: 2vw;
+  font-size: 2.3vw;
+}
+
+.HelpPage .FAQ .Questions {
+  align-self: center;
+  width: 60%;
+  border: solid 0.1vw var(--grey);
+  border-bottom: none;
+  box-shadow: 0 0 1vw 0.1vw var(--grey);
+}
+
+.HelpPage .FAQ .Questions .Question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 0.1vw var(--grey);
+  height: 5vw;
+  background: var(--grey-light);
+}
+
+.HelpPage .FAQ .Questions .Question:hover {
+  cursor: pointer;
+}
+
+.HelpPage .FAQ .Questions .Question h2 {
+  margin-left: 2vw;
+  font-size: 1.7vw;
+}
+
+.HelpPage .FAQ .Questions .Question h3 {
+  margin-left: 20vw;
+  font-size: 1.3vw;
+}
+
+/* Profile Page */
+
+.ProfilePage {
+  padding-top: var(--page-top-padding);
+  display: flex;
+  flex-direction: column;
+}
+
+.ProfilePage .ProfileBanner {
+  align-self: center;
+  height: 20vw;
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vw;
+  box-shadow: 0 0 0.5vw 0.5vw var(--grey-light);
+  margin-bottom: 3vw;
+  width: 70%;
+}
+
+.ProfilePage .ProfileBanner .ProfilePic {
+  border-radius: 100vw;
+  width: 10vw;
+  margin-bottom: 1vw;
+  overflow: hidden;
+  border: solid 0.1vw var(--grey-light);
+  box-shadow: 0 0 0.7vw 0.5vw var(--grey-light);
+  margin-right: 3vw;
+  transition: var(--transition-time);
+}
+
+.ProfilePage .ProfileBanner .ProfilePic:hover {
+  width: 12vw;
+  transition: var(--transition-time);
+}
+
+.ProfilePage .ProfileBanner .ProfilePic img {
+  width: 100%;
+}
+
+.ProfilePage .ProfileBanner .ProfileDetails p {
+  font-size: 1.2vw;
+}
+
+.ProfilePage .ProfileBanner .ProfileDetails p span {
+  font-weight: bold;
+}
+
+.ProfilePage .ProfileBanner .Manage {
+  margin-top: 1vw;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 0.5vw;
+  font-weight: bold;
+  padding: 0.7vw 1vw;
+  font-size: 0.8vw;
+  align-self: self-end;
+}
+
+.ProfilePage .ProfileRunning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfilePage .ProfileRunning .Running {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfilePage .ProfileRunning .Running h1 {
+  align-self: self-start;
+  color: var(--grey-text);
+  margin-bottom: 3vw;
+  font-size: 2vw;
+}
+
+.ProfilePage .ProfileRunning .Running .List {
+  display: flex;
+  width: 88%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.ProfilePage .ProfileRunning .Running .List h3 {
+  font-size: 1.7vw;
+}
+
+.ProfilePage .ProfileRunning .Running table {
+  padding-left: 13vw;
+  border: solid 0.1vw black;
+  border-radius: 1vw;
+  height: 14vw;
+  width: 65vw;
+  line-height: 2vw;
+}
+
+.ProfilePage .ProfileRunning .Running table p {
+  font-size: 1.5vw;
+}
+
+.ProfilePage .ProfileRunning .Running table h3 {
+  font-size: 1.7vw;
+}
+
+.ProfilePage .ProfileRunning .Running table h4 {
+  font-size: 1.7vw;
+  color: var(--grey-text);
+}
+
+.ProfilePage .ProfileRunning .Running table h5 {
+  font-size: 1.7vw;
+  color: var(--grey-dark);
+}
+
+/*Profile Edit Page */
+
+.ProfileEditPage {
+  width: 100vw;
+  padding-top: var(--page-top-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfileEditPage h1 {
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 3vw;
+  font-size: 2vw;
+}
+
+.ProfileEditPage .ProfilePic {
+  border-radius: 100vw;
+  width: 15vw;
+  margin-bottom: 1vw;
+  overflow: hidden;
+  border: solid 0.1vw var(--grey-light);
+  box-shadow: 0 0 0.7vw 0.5vw var(--grey-light);
+  transition: var(--transition-time);
+}
+
+.ProfileEditPage .ProfilePic:hover {
+  cursor: pointer;
+  width: 17vw;
+  transition: var(--transition-time);
+}
+
+.ProfileEditPage .ProfilePic img {
+  width: 100%;
+}
+
+.ProfileEditPage .Form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vw;
+}
+
+.ProfileEditPage .Form h2 {
+  font-size: 1.6vw;
+
+  margin: 1vw 0;
+}
+
+.ProfileEditPage .Form input {
+  border-radius: 0.7vw;
+  border: 0.1vw solid var(--grey);
+  width: 100%;
+  margin: 1vw 0;
+  padding-top: 1.4vw;
+  padding-bottom: 1.1vw;
+  padding-left: 1vw;
+  font-size: 0.9vw;
+}
+
+.ProfileEditPage .Form input::placeholder {
+  color: var(--grey-text);
+}
+
+.ProfileEditPage .Form select {
+  background: white;
+  border-radius: 0.7vw;
+  border: 0.1vw solid var(--grey);
+  width: 101.5%;
+  margin: 1vw 0;
+  padding-top: 1.4vw;
+  padding-bottom: 1.1vw;
+  padding-left: 1vw;
+  font-size: 0.9vw;
+}
+
+.ProfileEditPage .Form .FormButtons {
+  margin-left: -1vw;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.ProfileEditPage .Form .FormButtons button {
+  margin-top: 1vw;
+  position: relative;
+  left: 1vw;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 0.8vw;
+  font-weight: bold;
+  padding: 1vw 4vw;
+  font-size: 1vw;
+  align-self: self-end;
+}
+
+/* Cart Page */
+
+.CartPage {
+  padding-top: var(--page-top-padding);
+  display: flex;
+  width: 100vw;
+}
+
+.CartPage .FirstHalf {
+  margin-top: 3vw;
+  margin-right: 2vw;
+  margin-left: 10vw;
+  width: 70%;
+}
+
+.CartPage .FirstHalf .Box1 {
+  border: solid 0.1vw var(--grey);
+  border-radius: 1vw;
+  margin-bottom: 3vw;
+}
+
+.CartPage .FirstHalf .Box1 .Header {
+  margin-top: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+
+.CartPage .FirstHalf .Box1 .Header h2 {
+  margin-left: 2vw;
+  font-size: 2vw;
+}
+
+.CartPage .FirstHalf .Box1 .Header h2 span {
+  font-weight: normal;
+  font-size: 1vw;
+  color: var(--grey-text);
+}
+
+.CartPage .FirstHalf .Box1 .Header p {
+  color: red;
+  cursor: pointer;
+  font-size: 1vw;
+  margin-right: 2vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable {
+  margin-left: 2vw;
+  width: 90%;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable thead td {
+  font-weight: bold;
+  font-size: 1vw;
+  padding-bottom: 1vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem td {
+  padding-bottom: 1vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Product {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Product img {
+  width: 20%;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Product h3 {
+  font-size: 1.3vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Product p {
+  font-size: 1vw;
+  color: var(--grey-text);
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Product div {
+  margin-left: 2vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Amount div {
+  display: flex;
+  align-items: center;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Amount div button {
+  border: solid 0.1vw;
+  padding: 0.4vw 1.3vw;
+  border-radius: 25vw;
+  font-weight: bold;
+  font-size: 1vw;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Amount div p {
+  font-size: 1vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Amount div p {
+  margin: 0 1vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .Price p {
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.CartPage .FirstHalf .Box1 .CartTable .CartItem .ClearItem p {
+  font-size: 1vw;
+  color: red;
+  cursor: pointer;
+}
+
+.CartPage .SecondHalf {
+  margin-top: 3vw;
+  margin-right: 10vw;
+  margin-left: 2vw;
+  width: 30%;
+}
+
+.CartPage .SecondHalf .Box1 {
+  width: 100%;
+  border-radius: 1vw;
+  border: solid 0.1vw var(--grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CartPage .SecondHalf .Box1 p {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  align-self: flex-start;
+}
+
+.CartPage .SecondHalf .Box1 .PromoHeader {
+  font-weight: bold;
+}
+
+.CartPage .SecondHalf .Box1 .PromoInput {
+  border: solid 0.1vw var(--grey);
+  border-radius: 1vw;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+
+.CartPage .SecondHalf .Box1 .PromoInput input {
+  background: none;
+  border: none;
+  outline: none;
+  height: 2vw;
+  margin-left: 1vw;
+  font-size: 1vw;
+}
+
+.CartPage .SecondHalf .Box1 .PromoInput button {
+  border-radius: 1vw;
+  padding: 0 1vw;
+  background: var(--blue);
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.CartPage .SecondHalf .Box1 hr {
+  border: solid 0.1vw var(--grey);
+  width: 20vw;
+}
+
+.CartPage .SecondHalf .Box1 .Subtotal,
+.Discount,
+.Total {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1vw;
+}
+
+.CartPage .SecondHalf .Box1 .Subtotal,
+.Discount,
+.Total p {
+  color: var(--grey-text);
+  font-size: 0.7vw;
+}
+
+.CartPage .SecondHalf .Box1 .Total p {
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: black;
+}
+
+.CartPage .SecondHalf .Box1 .Checkout {
+  background-color: var(--blue);
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  margin-bottom: 1vw;
+}
+
+/* Checkout Page */
+
+.CheckoutPage {
+  padding-top: var(--page-top-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CheckoutPage .CheckoutCard {
+  display: flex;
+  width: 70%;
+  margin: 3vw 0;
+  border-radius: 3vw;
+  box-shadow: 0vw 0vw 1vw 0.1vw var(--grey);
+  overflow: hidden;
+}
+
+.CheckoutPage .CheckoutCard .FirstHalf {
+  position: relative;
+  background: var(--blue);
+  width: 50%;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.CheckoutPage .CheckoutCard .FirstHalf .LogoBackground {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.CheckoutPage .CheckoutCard .FirstHalf .Logo {
+  width: 80%;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner {
+  width: 85%;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner h1 {
+  font-size: 2vw;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner hr {
+  margin-top: 2vw;
+  border: solid 0.1vw var(--grey);
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner .CardForm {
+  margin: 2vw 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner .CardForm input {
+  outline: none;
+  border: solid 0.1vw var(--grey-dark);
+  height: 2.7vw;
+  width: 100%;
+  border-radius: 0.3vw;
+  margin-bottom: 2vw;
+  padding-left: 0.5vw;
+  font-size: 0.8vw;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner .CardForm .CardDetails {
+  width: 102.5%;
+  display: flex;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner .CardForm .CardDetails input {
+  margin-right: 1vw;
+}
+
+.CheckoutPage
+  .CheckoutCard
+  .SecondHalf
+  .Inner
+  .CardForm
+  .CardDetails
+  .CardNumber {
+  width: 300%;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner .CardForm .Total p {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2vw;
+}
+
+.CheckoutPage .CheckoutCard .SecondHalf .Inner .CardForm button {
+  border-radius: 1vw;
+  height: 3.5vw;
+  width: 100%;
+  background: var(--blue);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3vw;
+}

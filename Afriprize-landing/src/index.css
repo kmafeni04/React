@@ -1,0 +1,124 @@
+:root {
+  --blue: rgb(1, 0, 56);
+  --gold: rgb(204, 153, 51);
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: 
+  local('Raleway'),
+  url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf) format('truetype');
+}
+
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--blue);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+.Background {
+  position: fixed;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.TopBar {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+}
+
+.TopBar .Logo {
+  height: 40%;
+}
+
+.TopBar button {
+  background: white;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+}
+
+.MainPage {
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+.MainPage .FirstHalf {
+  width: 50%;
+}
+
+.MainPage .FirstHalf h1 {
+  font-size: 45px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  font-family: Raleway, sans-serif;
+}
+
+.MainPage .FirstHalf .LowerHalf {
+  display: flex;
+  align-items: center;
+}
+
+.MainPage .FirstHalf .LowerHalf button {
+  background: white;
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+.MainPage .SecondHalf {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+.PhoneOne {
+  height: 90%;
+}
+
+.PhoneTwo {
+  height: 100%;
+}
+
+.SecondHalf .Footer {
+  width: 100%;
+}
+
+.FooterInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 280px;
+  height: 15vh;
+}
+
+.FooterInner p {
+  width: 200px;
+}
+
+.FooterInner h1 {
+  font-weight: normal;
+  font-size: 90px;
+}

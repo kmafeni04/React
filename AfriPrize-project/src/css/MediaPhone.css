@@ -1,0 +1,277 @@
+@media screen and (max-width: 768px) {
+  :root{
+    --page-top-padding: 13vw;;
+  }
+
+  .webPage {
+    flex-direction: column;
+  }
+
+  /* Login and Register Pages */
+  .firstHalf {
+    width: 100%;
+    display: none;
+  }
+
+  .secondHalf {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .secondHalfTop {
+    margin-bottom: 12vw;
+  }
+
+  .secondHalfTopTable {
+    font-size: 4vw;
+  }
+
+  .ActiveBar {
+    height: 1.5vw;
+  }
+
+  .secondHalfMainHeader {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
+
+  .secondHalfMainFpLgn {
+    margin-left: 0;
+  }
+
+  .secondHalfMainSubHeader {
+    font-size: 2.7vw;
+    margin-bottom: 5vw;
+  }
+
+  .secondHalfMainInput input {
+    padding-top: 3vw;
+    padding-bottom: 2.2vw;
+    padding-left: 2vw;
+    font-size: 2vw;
+    border-radius: 1.7vw;
+  }
+
+  .secondHalfMainNavRadio {
+    font-size: 3vw;
+  }
+
+  .secondHalfMainInput input::placeholder {
+    color: var(--grey);
+    font-size: 2vw;
+  }
+
+  .secondHalfTopTableTop {
+    height: 10vw;
+  }
+
+  .secondHalfMainFpLgn button {
+    color: white;
+    background-color: var(--blue);
+    border-radius: 1.5vw;
+    font-weight: bold;
+    padding: 2vw 6vw;
+    font-size: 3vw;
+  }
+
+  .secondHalfMainNext button {
+    color: white;
+    background-color: var(--blue);
+    border-radius: 1.5vw;
+    font-weight: bold;
+    padding: 2vw 6vw;
+    font-size: 3vw;
+  }
+
+  .secondHalfMainVerify button {
+    color: white;
+    background-color: var(--blue);
+    border-radius: 1.5vw;
+    font-weight: bold;
+    padding: 2vw 2vw;
+    font-size: 3vw;
+  }
+
+  .secondHalfMainFpLgn {
+    margin-top: 5vw;
+  }
+
+  .secondHalfMainFpLgn a {
+    font-size: 3vw;
+  }
+
+  .rmbrMe {
+    font-size: 3vw;
+  }
+
+  .secondHalfMainCongratulations h1 {
+    font-size: 10vw;
+  }
+
+  .secondHalfMainCongratulations p {
+    font-size: 4vw;
+  }
+
+  /* End of Login and Register Pages */
+
+  /* Navbar */
+  .MainNavbar {
+    height: 10vw;
+  }
+
+  /*End of Navbar */
+
+  /* Home Main */
+
+  .HomeMainPage {
+    padding-top: var(--page-top-padding);
+  }
+
+  /*Section One */
+  .SectionOneFirstHalf {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .HomeMainPage .SectionOne {
+    flex-direction: column;
+  }
+
+  .SectionOneFirstHalf .LowerElements {
+    width: 90%;
+  }
+
+  .SectionOneFirstHalf .LowerElements .LeftHand p {
+    font-size: 2vw;
+  }
+
+  .SectionOneFirstHalf .LowerElements .LeftHand h2 {
+    font-size: 3.5vw;
+  }
+  .SectionOneSecondHalf {
+    width: 100%;
+  }
+
+  .SectionOneSecondHalf h1 {
+    font-size: 5vw;
+  }
+  /* Selling fast cards */
+
+  .SellingFastCardContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .SellingFastCard {
+    width: 40%;
+    height: 20vw;
+  }
+
+  .SellingFastCardFirstHalf {
+    margin: 1vw;
+  }
+
+  .SellingFastCardFirstHalf h1 {
+    color: black;
+    margin-bottom: 1vw;
+    font-size: 3vw;
+  }
+
+  .SellingFastCardFirstHalf p {
+    font-size: 2vw;
+  }
+  .ProgressBarContainer p {
+    margin-bottom: 1%;
+  }
+  .ProgressBarContainer h5 {
+    font-size: 1.5vw;
+  }
+
+  .ProgressBar {
+    margin-bottom: 3vw;
+  }
+  /*End of Section One */
+
+  .HomeMainPage .SectionTwo h1 {
+    font-size: 3vw;
+    margin-bottom: 0;
+  }
+
+  .HomeMainPage .SectionTwo .Recommended {
+    display: grid;
+    grid: 50vw / auto auto;
+    margin-left: var(--page-top-padding);
+  }
+
+  .RecommendedCard {
+    width: 70%;
+  }
+
+  .RecommendedCard .Top {
+    height: 2vw;
+    margin-bottom: 7vw;
+  }
+
+  .HomeMainPage .SectionThree h1 {
+    font-size: 3vw;
+  }
+
+  .ProductMainPage {
+    padding-top: var(--page-top-padding);
+  }
+
+  .ProductMainPage .SectionTwo {
+    margin-bottom: 13vw;
+  }
+
+  .ProductMainPage .SectionTwo h1 {
+    font-size: 3vw;
+  }
+
+  .ProductMainPage .SectionTwo .Recommended {
+    display: grid;
+    grid: 50vw / auto auto;
+    margin-left: 13vw;
+  }
+
+  .ProductListMainPage .SectionTwo h1 {
+    font-size: 3vw;
+  }
+
+  #firstRow {
+    margin-bottom: 0;
+  }
+
+  #secondRow {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .ProductListMainPage .SectionTwo .Recommended {
+    display: grid;
+    grid: 45vw / auto auto;
+    margin-left: 13vw;
+  }
+
+  .RaffleDrawPage {
+    padding-top: var(--page-top-padding);
+  }
+
+  .HelpPage{
+    padding-top: var(--page-top-padding);
+  }
+
+  .ProfilePage {
+    padding-top: var(--page-top-padding);
+  }
+
+  .ProfileEditPage {
+    padding-top: var(--page-top-padding);
+  }
+  .CartPage{
+    padding-top: var(--page-top-padding);
+  }
+  .CheckoutPage{
+    padding-top: var(--page-top-padding);
+  }
+}
