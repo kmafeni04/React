@@ -109,12 +109,12 @@ const router = createBrowserRouter([
     element: <ProfileEdit />,
   },
   {
-    path:"/CartPage",
-    element:<CartPage />,
+    path: "/CartPage",
+    element: <CartPage />,
   },
   {
-    path:"/Checkout",
-    element:<Checkout />,
+    path: "/Checkout",
+    element: <Checkout />,
   },
 ]);
 
